@@ -45,14 +45,14 @@ export const authOptions: NextAuthOptions = {
       clientId: process.env.TWITTER_ID,
       clientSecret: process.env.TWITTER_SECRET,
     }),
-    Auth0Provider({
-      clientId: process.env.AUTH0_ID,
-      clientSecret: process.env.AUTH0_SECRET,
-      issuer: process.env.AUTH0_ISSUER,
-    }),
+    // Auth0Provider({
+    //   clientId: process.env.AUTH0_ID,
+    //   clientSecret: process.env.AUTH0_SECRET,
+    //   issuer: process.env.AUTH0_ISSUER,
+    // }),
   ],
   theme: {
-    colorScheme: "light",
+    colorScheme: "dark",
   },
   callbacks: {
     async jwt({ token }) {
